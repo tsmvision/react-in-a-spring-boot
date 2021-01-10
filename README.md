@@ -14,3 +14,7 @@ dummy react files using create-react-app.
 * execute "npm run build"
 * clone build folder from frontend to backend/target/public when compiling backend.
 
+### How to test
+* mvn clean package in the backend
+* run the "ReactinaspringbootApplication.class" in the backend.
+
