@@ -35,6 +35,14 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
     <profiles>
         <profile>
             <id>local-development</id>
@@ -104,7 +112,7 @@
         <profile>
             <id>production</id>
             <properties>
-                <packaging.type>war</packaging.type>
+                <packaging.type>jar</packaging.type>
             </properties>
         </profile>
     </profiles>
