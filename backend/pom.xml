@@ -36,16 +36,10 @@
 
     <build>
         <resources>
-            <!-- clone frontend/build to target/public at the compile time -->
             <resource>
                 <directory>${frontend.folder.location}/build</directory>
                 <filtering>false</filtering>
                 <targetPath>public/</targetPath>
-            </resource>
-            <!-- -->
-            <resource>
-                <directory>${project.basedir}/src/main/resources</directory>
-                <filtering>false</filtering>
             </resource>
         </resources>
         <plugins>
