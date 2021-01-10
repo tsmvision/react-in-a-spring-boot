@@ -1,8 +1,16 @@
 ## React with Spring Boot
 
-build react code in frontend folder
+* frontend
 
-deploy react build files at the spring boot compile time.
+dummy react files using create-react-app.
 
-make sure that target/class/public includes react build files.
+
+## backend
+
+### maven process frontend compiling
+
+* maven access to frontend folder
+* execute "npm install"
+* execute "npm run build"
+* clone build folder from frontend to backend/target/public when compiling backend.
 

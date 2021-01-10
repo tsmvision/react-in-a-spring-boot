@@ -18,6 +18,7 @@
         <java.version>1.8</java.version>
         <node.version>v14.15.0</node.version>
         <frontend.maven.plugin>1.11.0</frontend.maven.plugin>
+        <frontend.folder.location>../frontend</frontend.folder.location>
     </properties>
 
     <dependencies>
@@ -37,7 +38,7 @@
         <resources>
             <!-- clone frontend/build to target/public at the compile time -->
             <resource>
-                <directory>${project.basedir}/frontend/build</directory>
+                <directory>${frontend.folder.location}/build</directory>
                 <filtering>false</filtering>
                 <targetPath>public/</targetPath>
             </resource>
@@ -89,7 +90,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <workingDirectory>frontend</workingDirectory>
+                    <workingDirectory>${frontend.folder.location}</workingDirectory>
                     <nodeVersion>${node.version}</nodeVersion>
                 </configuration>
             </plugin>
